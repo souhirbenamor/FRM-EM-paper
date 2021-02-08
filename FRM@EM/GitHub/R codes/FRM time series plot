@@ -1,9 +1,0 @@
-#FRM time series plot 
-library(readxl)
-library(ggplot2)
-FRM_EM_Time_Series_FRM <- read_excel("/Users/vaughan/Desktop/FRM_EM_Time_Series_FRM.xlsx")
-plot(FRM_EM_Time_Series_FRM$`FRM`~FRM_EM_Time_Series_FRM$Date,type="l", xlab = "Date", ylab = "FRM_EM", col="blue",bg="transparent")
-png(file='/Users/vaughan/Desktop/FRM-EM.png',width=1200,height=600,bg="transparent")
-p
-dev.off()
-
